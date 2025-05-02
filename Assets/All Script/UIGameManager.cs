@@ -13,7 +13,8 @@ public class UIGameManager : MonoBehaviour
 
     [Header("UI Elements")]
     public TextMeshProUGUI scoreText;
-    public TextMeshProUGUI scoreTextSummay;
+    public TextMeshProUGUI scoreTextSummary;
+    public TextMeshProUGUI scoreSummaryDefeat;
     public TextMeshProUGUI HealthText;
 
 
@@ -93,7 +94,8 @@ public class UIGameManager : MonoBehaviour
     {
         this.score += score;
         scoreText.text = this.score.ToString();
-        scoreTextSummay.text = this.score.ToString();
+        scoreTextSummary.text = this.score.ToString();
+        scoreSummaryDefeat.text = this.score.ToString();
     }
 
     public void DeleteScore(int Health)
